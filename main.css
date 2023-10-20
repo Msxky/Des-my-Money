@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #111111;
+  --secondary: #fff;
+  --tranparant-dark: #d2afff;
+  --tranparant-white: pink;
+}
+
+body {
+  background: var(--tranparant-dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+.alert {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: 800;
+}
+
+.container {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+/* NAVBAR STYLE */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: var(--tranparant-dark);
+  height: 10vh;
+  width: 100%;
+  left: 0;
+  justify-content: space-between;
+  z-index: 100;
+  text-shadow: 0 0 10px var(--primary);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.logo a {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary);
+  height: 10vh;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.dark-mode i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: var(--secondary);
+  height: 10vh;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+/* NAVBAR STYLE END */
+
+/* CONTENT STYLE */
+
+.home-content{
+  margin-top: 30%;
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  height: 400px;
+  width: 100%;
+}
+
+.isi-content h1{
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Sans-Serif;
+}
+
+.isi-content button {
+  margin-top: 20px;
+  left:50%;
+  border: none;
+  color:var(--primary);
+  width: 150px;
+  height: 50px;
+  font-weight: 800;
+  border-radius: 25px;
+  box-shadow: 0 0 25px var(--primary);
+}
+
+/* YANG DI ATAS BAGIAN HOME */
+
+/* kata kunci */
+.kata-kunci{
+  margin-top: 30%;
+}
+/* kata kunci end */
+
+/* latihan */
+.margin-soal{
+  margin-top: 30%;
+  margin-bottom: 30%;
+}
+
+.soal{
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.soal img{
+  width: 100%;
+  box-shadow: 0 0 5px var(--tranparant-dark),
+   0 0 50px var(--tranparant-dark),
+   0 0 100px var(--tranparant-dark);
+  border-radius: 5px;
+}
+
+.btnSoal{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 25px;
+  margin: 5px;
+
+}
+
+#btnSoal, #btnOptions, #btnBack{
+  color: var(--primary);
+  width: 100px;
+  text-decoration: none;
+  padding: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  transition: all .3s ease;
+  background: var(--tranparant-white);
+}
+
+#btnDepan, #btnBelakang{
+  color: var(--primary);
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  margin-right: 10px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  transition: all .3s ease;
+  background: var(--tranparant-white);
+}
+
+#btnSoal:hover, #btnOptions:hover, #btnBack:hover{
+  width: 100px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--tranparant-dark);
+  color: var(--secondary);
+  box-shadow: 0 0 5px var(--secondary),
+  0 0 20px var(--primary),0 0 100px var(--primary);
+  scale: 1.1;
+  transition: all .3s ease;
+}
+
+#btnDepan:hover, #btnBelakang:hover{
+  background: var(--tranparant-dark);
+  color: var(--primary);
+  box-shadow: 0 0 5px var(--secondary),
+  0 0 20px var(--primary),0 0 100px var(--primary);
+  scale: 1.1;
+  transition: all .3s ease;
+}
+
+/* latihan end */
+
+.isi {
+  height: 80vh;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mata-uang {
+  display: flex;
+  background: purple;
+}
+
+.uang {
+  padding: 40px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+button {
+  position: relative;
+  border: none;
+  width: 100px;
+}
+
+.box{
+  background: var(--tranparant-dark);
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px var(--primary);
+}
+
+/* deskripsi uang */
+.deskripsi{
+  margin-top: 30%;
+}
+
+.deskripsi img{
+  margin-bottom: 35px;
+  width: 100%;
+  box-shadow: 0 0 5px var(--tranparant-dark),
+   0 0 50px var(--tranparant-dark),
+   0 0 100px var(--tranparant-dark);
+  border-radius: 10px;
+}
+
+/* CONTENT STYLE END */
+
+/* FOOTER STYLE */
+.footer {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 0 20px var(--tranparant-dark);
+}
+
+.conten-footer {
+  display: flex;
+  background: var(--tranparant-dark);
+  align-items: center;
+  height: 100%;
+  width: 100vh;
+  font-size: 35px;
+  box-shadow:0 0 10px var(--primary);
+}
+
+.conten-footer i {
+  font-size: 35px;
+}
+
+.conten-footer a {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--tranparant-white);
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+  width: 100%;
+  margin: 2px;
+  border-radius: 20px;
+  transition: all .3s ease;
+}
+
+.conten-footer a:hover {
+  color:var(--secondary);
+  transition: all .3s ease;
+  background: var(--primary);
+  text-shadow: 0 0 10px var(--secondary);
+}
+
+.conten-footer .active{
+  color:var(--secondary);
+  transition: all .3s ease;
+  background: var(--primary);
+  text-shadow: 0 0 10px var(--secondary);
+}
+
+.btn{
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn1 button{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn button{
+  scale: .9;
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  color: var(--primary);
+  text-shadow: 0 0 5px var(--secondary);
+    background-color: var(--tranparant-white);
+    box-shadow: 0 0 20px var(--tranparant-dark);
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 800;
+  transition: all .3s ease;
+}
+
+
+
+.btn button:hover{
+  scale: 1;
+  transition: all .3s ease;
+  background-color: var(--tranparant-dark);
+  color: var(--primary);
+  text-shadow: 5 5 100px var(--primary);
+}
+
+@media (min-width: 475px) {
+  .container {
+    display: none;
+  }
+
+  .alert {
+    display: block;
+  }
+}
+
+@media (max-width: 310px) {
+  .container {
+    display: none;
+  }
+
+  .alert {
+    display: block;
+  }
+}
